@@ -846,33 +846,6 @@ bool pyToCard(Card **card, char *fileName, char *fn)
 
 bool pyEditCard(Card *card, char *fn, char *fileName)
 {
-    // find the fn to update
-    //  ListIterator trav = createIterator(card->fn->values);
-    //  void * elem;
-    //  if((elem = nextElement(&trav)) != NULL){
-    //      char * val = (char*) elem;
-    //      //char * contact = malloc(sizeof(char)*strlen(val) +10);
-    //      //strcpy(contact, val);
-    //      //return contact;
-    //      val = realloc(val, strlen(fn)+10);
-    //      val[0] = '\0';
-    //      if(val == NULL){
-    //          return false;
-    //      }
-    //      strcpy(val, fn);
-    //  }
-    //  Node * tmp = (Node*)trav.current;
-    //  if(tmp == NULL){
-    //      return false;
-    //  } else{
-    //      char * cpyFn = malloc(sizeof(char)*strlen(fn)+10);
-    //      strcpy(cpyFn, fn);
-    //      char * elem = (char *) tmp->data;
-    //      free(elem);
-    //      //updated
-    //      temp->data = cpyFn;
-    //  }
-
     //preliminary validation
     if(card->fn == NULL){
         return false;
